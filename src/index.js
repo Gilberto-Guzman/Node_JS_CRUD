@@ -24,6 +24,8 @@ app.set('view engine', '.hbs');
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use('/bootstrap', express.static(join(dirname(fileURLToPath(import.meta.url)), '../node_modules/bootstrap/dist')));
+app.use('/popper', express.static(join(dirname(fileURLToPath(import.meta.url)), '../node_modules/popper.js/dist')));
 
 // --- Routes ---
 app.get('/', (req, res) => {
