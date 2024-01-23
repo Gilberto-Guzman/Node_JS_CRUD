@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import { engine } from 'express-handlebars';
 import {join, dirname} from 'path';
 import {fileURLToPath} from 'url';
+// import personasRoutes from './routes/personas.routes.js';
 
 // --- Initialization ---
 const app = express();
@@ -32,6 +33,8 @@ app.get('/', (req, res) => {
     // res.json({ "message": "Hello World" });
     res.render('index');
 });
+
+// app.use(personasRoutes);
 
 // --- Public Files ---
 app.use(express.static(join(__dirname, 'public')));

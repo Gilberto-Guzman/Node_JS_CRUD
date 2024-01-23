@@ -7,5 +7,12 @@
 
     npm install bootstrap popper.js
 
-
     node ./src/index.js
+
+### Ejecución del servidor.
+
+    npm run dev
+
+### Video de apoyo.
+
+    https://www.youtube.com/watch?v=eOGlouhsIjY
