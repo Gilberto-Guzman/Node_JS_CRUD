@@ -1,0 +1,12 @@
+CREATE DATABASE Test01;
+
+USE Test01;
+
+CREATE TABLE people(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    lastname VARCHAR(50) NOT NULL,
+    age INT 
+);
+
+SELECT * FROM people;
