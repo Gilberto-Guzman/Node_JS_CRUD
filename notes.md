@@ -16,3 +16,5 @@
 ### Video de apoyo.
 
     https://www.youtube.com/watch?v=eOGlouhsIjY
+
+    minuto 55
