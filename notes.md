@@ -1,6 +1,8 @@
-npm init --y
+### Configuracion inicial.
 
-npm i express express-handlebars morgan mysql2
-npm i nodemon -D
+    npm init --y
 
-node ./src/index.js
+    npm i express express-handlebars morgan mysql2
+    npm i nodemon -D
+
+    node ./src/index.js

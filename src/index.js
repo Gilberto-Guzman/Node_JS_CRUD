@@ -31,6 +31,7 @@ app.get('/', (req, res) => {
 });
 
 // --- Public Files ---
+app.use(express.static(join(__dirname, 'public')));
 
 // --- Run Server ---
 app.listen(app.get('port'), () =>
