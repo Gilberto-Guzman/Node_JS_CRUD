@@ -2,16 +2,16 @@
 import express from 'express';
 import morgan from 'morgan';
 import { engine } from 'express-handlebars';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import {join, dirname} from 'path';
+import {fileURLToPath} from 'url';
 
 // --- Initialization ---
 const app = express();
-const currentDir = dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // --- Settings ---
 app.set('port', process.env.PORT || 3000);
-app.set('views', join(currentDir, 'views'));
+app.set('views', join(__dirname, 'views'));
 app.engine('.hbs', engine({
     defaultLayout: 'main',
     layoutsDir: join(app.get('views'), 'layouts'),
