@@ -5,7 +5,7 @@ const pool = createPool({
     port: '3306',
     user: 'root',
     password: '',
-    database: 'Test01'
+    database: 'crudnodejs'
 });
 
 export default pool;
