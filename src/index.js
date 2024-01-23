@@ -27,7 +27,8 @@ app.use(express.json());
 
 // --- Routes ---
 app.get('/', (req, res) => {
-    res.json({ "message": "Hello World" });
+    // res.json({ "message": "Hello World" });
+    res.render('index');
 });
 
 // --- Public Files ---
