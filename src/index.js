@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/bootstrap', express.static(join(dirname(fileURLToPath(import.meta.url)), '../node_modules/bootstrap/dist')));
 app.use('/popper', express.static(join(dirname(fileURLToPath(import.meta.url)), '../node_modules/popper.js/dist')));
-
+app.use('/font-awesome', express.static(join(dirname(fileURLToPath(import.meta.url)), '../node_modules/@fortawesome/fontawesome-free')));
 // --- Routes ---
 app.get('/', (req, res) => {
     // res.json({ "message": "Hello World" });

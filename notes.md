@@ -9,6 +9,8 @@
 
     node ./src/index.js
 
+    npm install @fortawesome/fontawesome-free
+
 ### Ejecución del servidor.
 
     npm run dev
