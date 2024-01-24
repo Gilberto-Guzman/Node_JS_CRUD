@@ -33,7 +33,6 @@ app.get('/', (req, res) => {
     // res.json({ "message": "Hello World" });
     res.render('index');
 });
-
 app.use(personasRoutes);
 
 // --- Public Files ---
